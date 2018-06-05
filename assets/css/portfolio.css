@@ -98,9 +98,29 @@ section .content {
 	margin-top: 40px;
 }
 
-.work-container {
-	grid-template-columns: 
-	grid-template-rows:
+/* .container-holder {
+	margin: 0 auto;
+} */
+
+div.gallery {
+	margin: 5px;
+	border: 1px solid #ccc;
+	float: left;
+	width: 400px;
+}
+
+div.gallery:hover {
+	border: 1px solid #777;
+}
+
+div.gallery img {
+	width: 100%;
+	height: auto;
+}
+
+div.desc {
+	padding: 15px;
+	text-align: center;
 }
 
 .parallax__container {
