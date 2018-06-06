@@ -118,6 +118,11 @@ section .content {
 	margin-top: 40px;
 }
 
+.social {
+	text-align: center;
+margin: 30px;
+}
+
 .parallax__container {
 	clip: rect(0, auto, auto, 0);
 	height: 100%;
@@ -151,7 +156,7 @@ section .content {
 }
 
 .container__big {
-	height: 95vh;
+	height: 97vh;
 }
 
 .container__small {
