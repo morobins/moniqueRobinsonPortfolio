@@ -54,7 +54,8 @@ h1 {
 	text-align: right;
 }
 
-h2, h2#tech-skills {
+h2,
+h2#tech-skills {
 	font-family: 'Amita', cursive;
 	font-size: 2.5em;
 	font-weight: 700;
@@ -64,7 +65,7 @@ h2, h2#tech-skills {
 }
 
 h2#about {
-	color:white;
+	color: white;
 }
 
 #skills-list {
@@ -104,14 +105,14 @@ section .content {
 	color: #fff;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 15px 20px;
+	padding: 0 20px;
 	text-align: center;
 	margin-top: 45px;
 }
 
 #me {
 	border-radius: 20%;
-	size: 400px;
+	size: 200px;
 	display: block;
 	margin-left: auto;
 	margin-right: 200px;
@@ -120,17 +121,17 @@ section .content {
 
 .social {
 	text-align: center;
-margin: 30px;
+	margin: 30px;
 }
 
+/* Added this wrapper width */
 .gallery-wrapper {
 	width: 100%;
+	text-align: center;
+	height: auto;
 	margin: 20px;
 }
 
-.row {
-	
-}
 
 .parallax__container {
 	clip: rect(0, auto, auto, 0);
@@ -156,6 +157,11 @@ margin: 30px;
 	background-size: cover;
 }
 
+.main {
+	padding: 0;
+	text-align: center;
+}
+
 .container {
 	padding: 15px;
 }
@@ -176,18 +182,12 @@ margin: 30px;
 	height: 452px;
 }
 
-.gallery {
-	display: grid;
-	grid-gap: 3rem;
-	justify-content: space-evenly;
-	grid-template-columns: repeat(auto-fill, 400px);
-}
-
 div.item {
-	margin: 10px;
+	/* And here */
+	/* margin: 10px; */
 	border: 1px solid #ccc;
 	float: left;
-	width: 430px;
+	width: 400px;
 	background: cadetblue;
 }
 
@@ -201,14 +201,16 @@ div.item img {
 }
 
 div.name {
-	padding: 10px 0px 0px 0px;;
+	padding: 10px 0px 0px 0px;
+	;
 	text-align: center;
 	font-weight: bold;
 	color: black;
 	font-size: 2.5rem;
 }
 
-div.skills, div.desc {
+div.skills,
+div.desc {
 	margin: 7px;
 	text-align: center;
 	/* font-weight: 500; */
@@ -216,85 +218,105 @@ div.skills, div.desc {
 }
 
 /*arrow*/
+
 /* the important styles */
 
 .arrow-wrap {
-  position:absolute;
-  z-index:1;
-  left:50%;
-  top:-5em;
-  margin-left:-5em;
-  background:#111;
-  width:10em;
-  height:10em;
-  padding:4em 2em;
-  border-radius:50%;
-  font-size:0.5em;
-  display:block;
-  box-shadow:0px 0px 5px 0px #333;
+	position: absolute;
+	z-index: 1;
+	left: 50%;
+	top: -5em;
+	margin-left: -5em;
+	background: #111;
+	width: 10em;
+	height: 10em;
+	padding: 4em 2em;
+	border-radius: 50%;
+	font-size: 0.5em;
+	display: block;
+	box-shadow: 0px 0px 5px 0px #333;
 }
 
 .arrow {
-  float:left;
-  position:relative;
-  width: 0px;
-height: 0px;
-border-style: solid;
-border-width: 3em 3em 0 3em;
-border-color: #ffffff transparent transparent transparent;
-  -webkit-transform:rotate(360deg)
+	float: left;
+	position: relative;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 3em 3em 0 3em;
+	border-color: #ffffff transparent transparent transparent;
+	-webkit-transform: rotate(360deg)
 }
 
 .arrow:after {
-  content:'';
-  position:absolute;
-  top:-3.2em;
-  left:-3em;
-  width: 0px;
-height: 0px;
-border-style: solid;
-border-width: 3em 3em 0 3em;
-border-color: #111 transparent transparent transparent;
-  -webkit-transform:rotate(360deg)
+	content: '';
+	position: absolute;
+	top: -3.2em;
+	left: -3em;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 3em 3em 0 3em;
+	border-color: #111 transparent transparent transparent;
+	-webkit-transform: rotate(360deg)
 }
-
 
 .hint {
-  position:absolute;
-  top:0.6em;
-  width:100%;
-  left:0;
-  font-size:2em;
-  font-style:italic;
-  text-align:center;
-  color:#fff;
-  opacity:0;
+	position: absolute;
+	top: 0.6em;
+	width: 100%;
+	left: 0;
+	font-size: 2em;
+	font-style: italic;
+	text-align: center;
+	color: #fff;
+	opacity: 0;
 }
-
 
 .arrow-wrap:hover .hint {
-  opacity:1;
+	opacity: 1;
 }
 
+@-webkit-keyframes arrows {
+	0% {
+		top: 0;
+	}
+	10% {
+		top: 12%;
+	}
+	20% {
+		top: 0;
+	}
+	30% {
+		top: 12%;
+	}
+	40% {
+		top: -12%;
+	}
+	50% {
+		top: 12%;
+	}
+	60% {
+		top: 0;
+	}
+	70% {
+		top: 12%;
+	}
+	80% {
+		top: -12%;
+	}
+	90% {
+		top: 12%;
+	}
+	100% {
+		top: 0;
+	}
+}
 
-  @-webkit-keyframes arrows {
-    0% { top:0; }
-    10% { top:12%; }
-    20% { top:0; }
-    30% { top:12%; }
-    40% { top:-12%; }
-    50% { top:12%; }
-    60% { top:0; }
-    70% { top:12%; }
-    80% { top:-12%; }
-    90% { top:12%; }
-    100% { top:0; }
-  }
-  
-  .arrow-wrap .arrow {
-    -webkit-animation: arrows 2.8s 0.4s;
-    -webkit-animation-delay: 3s;
-  }
+.arrow-wrap .arrow {
+	-webkit-animation: arrows 2.8s 0.4s;
+	-webkit-animation-delay: 3s;
+}
 
 /* ways of implementing parallax bg by class/id */
 
@@ -314,3 +336,17 @@ border-color: #111 transparent transparent transparent;
 		-webkit-mask-image: -webkit-linear-gradient(top, #fff 0%, #fff 100%);
 	}
 }
+
+/* Made the media query for this styling */
+
+@media (min-width: 600px) {
+	.gallery {
+		display: grid;
+		grid-gap: 3rem;
+		justify-content: space-evenly;
+		grid-template-columns: repeat(auto-fill, 400px);
+	}
+}
+
+
+
