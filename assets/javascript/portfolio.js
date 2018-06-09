@@ -21,6 +21,7 @@ function animateParallax(e, t) {
 /Mobi/.test(navigator.userAgent) && (windowHeight = screen.height);
 var universalParallax = function () {
     this.init = function (e) {
+        console.log("e is:", e);
         void 0 === e && (e = {}), e = {
             speed: void 0 !== e.speed ? e.speed : 4,
             className: void 0 !== e.className ? e.className : "parallax"
@@ -87,4 +88,3 @@ $(function() {
     });
   });
 
-  
